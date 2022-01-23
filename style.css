@@ -1,0 +1,273 @@
+body
+{
+  background-color: black;
+
+}
+.navbar
+{
+  color: white;
+  max-height: 30px;
+  background-color: rgb(12, 12, 12);
+  display: block;
+}
+nav
+{
+  visibility: hidden;
+}
+.navbar:hover nav
+{
+  visibility: visible;
+}
+.navbar i
+{
+  font-size: 20px;
+  padding-left: 5px;
+}
+.nav_first
+{
+  text-align: left;
+}
+.nav_second
+{
+  text-align: center;
+}
+.nav_third
+{
+  text-align: right;
+}
+.parent
+{
+  position: relative;
+  background-color: white;
+  display: inline-block;
+  min-height: 620px;
+  border-radius: 10px;
+  margin-left: 35%;
+  margin-top: 1%;
+}
+.first_div
+{
+  background-image: linear-gradient(270deg, rgb(247, 165, 71), rgb(255, 115, 0));
+  display: inline-block;
+  min-width: 370px;
+  min-height: 280px;
+  padding-left: 50px;
+  color: rgb(241, 241, 241);
+  border-radius: 10px 10px 0px 0px;
+}
+.robot
+{
+  background-color: rgb(219, 69, 0);
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 50px;
+  color: white;
+}
+.rob
+{
+  animation: hid 2s;
+}
+.second_div
+{
+  position: absolute;
+  background-color: white;
+  margin-top: -71px;
+  min-height: 100px;
+  min-width: 365px;
+  padding: 15px;
+  padding-top: 50px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  animation: show 2s;
+}
+.sec_rob
+{
+  margin-left: 24px;
+  margin-top: -90px;
+}
+.robot_2
+{
+  background-color: rgb(219, 69, 0);
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 50px;
+  color: white;
+}
+.sec_1
+{
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  animation: show1 4s;
+}
+.sec_2
+{
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  animation: show2 4s;
+}
+.sec_3
+{
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  animation: show3 6s;
+}
+.sec_4
+{
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  animation: show4 8s;
+}
+.sec_5
+{
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  padding: 10px;
+  margin-left: 45px;
+  max-width: 250px;
+  animation: show5 10s;
+}
+.cir_point
+{
+  background-color: rgba(230, 196, 191, 0.6);
+  color: rgb(250, 80, 2);
+  font-size: 7px;
+  padding: 3px;
+  border-radius: 50px;
+}
+@keyframes hid
+{
+  0% { opacity: 1; }
+  50%{ opacity: 1;}
+  100% { opacity: 0; }
+}
+@keyframes show
+{
+  0% { opacity: 0; }
+  50%{ opacity: 0;}
+  100% { opacity: 1; }
+}
+@keyframes show1
+{
+  0% { opacity: 0; }
+  50% { opacity: 0;}
+  100% { opacity: 1; }
+}
+@keyframes show2
+{
+  0% { opacity: 0; }
+  50% { opacity: 0;}
+  
+  80% { opacity: 0;}
+  100% { opacity: 1; }
+}
+@keyframes show3
+{
+  0% { opacity: 0; }
+  50% { opacity: 0;}
+  
+  60% { opacity: 0;}
+  80% { opacity: 0;}
+  100% { opacity: 1; }
+}
+@keyframes show4
+{
+  0% { opacity: 0; }
+  25% { opacity: 0;}
+  50% { opacity: 0;}
+  75% { opacity: 0;}
+  100% { opacity: 1; }
+}
+@keyframes show5
+{
+  0% { opacity: 0; }
+  20% { opacity: 0;}
+  40% { opacity: 0;}
+  60% { opacity: 0;}
+  80% { opacity: 0;}
+  100% { opacity: 1; }
+}
+
+
+
+@media screen and (max-width: 1100px){
+  .parent{
+    margin-top: 0%;
+    margin-left: 31%;
+  }
+  .nav_third
+  {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 900px){
+  .parent{
+    margin-top: 0%;
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 700px){
+  .parent{
+    margin-top: 0%;
+    margin-left: 19%;
+  }
+}
+@media screen and (max-width: 600px){
+  .parent{
+    margin-top: -4%;
+    margin-left: 13%;
+  }
+}
+@media screen and (max-width: 550px){
+  .parent{
+    margin-top: -6%;
+    margin-left: 11%;
+  }
+}
+@media screen and (max-width: 475px){
+  .parent{
+    margin-top: -12%;
+    margin-left: 4%;
+  }
+  .navbar i
+  {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 447px){
+  .parent{
+    margin-top: -15%;
+    margin-left: 1%;
+  }
+}
+@media screen and (max-width: 432px){
+  .parent{
+    margin-top: -18%;
+    margin-left: 0%;
+  }
+}
+@media screen and (max-width: 425px){
+  .parent{
+    margin-top: -20%;
+    margin-left: -1%;
+  }
+  .navbar span
+  {
+    visibility: hidden;
+  }
+}
